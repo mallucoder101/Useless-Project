@@ -26,14 +26,10 @@ Technical Details
 Technologies/Components Used
 Languages used: HTML, CSS, JavaScript
 
-Frameworks used: None (pure vanilla web — clean and light 😎)
+Frameworks used: None 
 
-Libraries used: None / Optional: [Add if you used anything like jQuery, anime.js etc.]
-
+Libraries used: None 
 Tools used: VS Code, GitHub, Canva, Cursor
-
-Project Documentation
-For Software:
 
 Screenshots 
 
