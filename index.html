@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nakshathra Nirnayam</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="navbar">
+            <div class="navbar-brand">
+                <h1>Nakshatra Nirnayam™</h1>
+            </div>
+            <nav class="navbar-links">
+                <a href="#calculator">Date Calculator</a>
+                <a href="history.html">Successful Breakups</a>
+                <a href="#rateUs">Rate Us</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1>Nakshatra <span>Nirnayam</span>™</h1>
+                <p class="tagline">Because even heartbreak needs a ✨<span>muhurtham</span>✨</p>
+                <button class="calculate" onclick="scrollToSection()">Reveal My Breakup Date</button>
+                <div class="contents">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16"><path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/></svg> Astrologically Accurate</p>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heartbreak-fill" viewBox="0 0 16 16"><path d="M8.931.586 7 3l1.5 4-2 3L8 15C22.534 5.396 13.757-2.21 8.931.586M7.358.77 5.5 3 7 7l-1.5 3 1.815 4.537C-6.533 4.96 2.685-2.467 7.358.77"/></svg> Emotionally Devastating</p>
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-emoji-sunglasses-fill" viewBox="0 0 16 16"><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M2.31 5.243A1 1 0 0 1 3.28 4H6a1 1 0 0 1 1 1v.116A4.2 4.2 0 0 1 8 5c.35 0 .69.04 1 .116V5a1 1 0 0 1 1-1h2.72a1 1 0 0 1 .97 1.243l-.311 1.242A2 2 0 0 1 11.439 8H11a2 2 0 0 1-1.994-1.839A3 3 0 0 0 8 6c-.393 0-.74.064-1.006.161A2 2 0 0 1 5 8h-.438a2 2 0 0 1-1.94-1.515zM4.969 9.75A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .866-.5z"/></svg> Meme Worthy</p>
+                </div>
+            </section>
+
+            <section class="form-section" id="calculator">
+                <div class="form-header">
+                    <h2>Let the <span>Stars</span> Decide</h2>
+                    <p>Fill in the cosmic details for your perfect breakup timing</p>
+                </div>
+
+                <div class="form-container">
+                    <div class="profile-section">
+                        <h3>Your Cosmic Profile</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="star">Your Nakshatram</label>
+                                <select name="star" id="star" required>
+                                    <option value="">Select your nakshatra</option>
+                                    <option value="Aswathi">Aswathi</option>
+                                    <option value="Bharani">Bharani</option>
+                                    <option value="Karthika">Karthika</option>
+                                    <option value="Rohini">Rohini</option>
+                                    <option value="Makeeryam">Makeeryam</option>
+                                    <option value="Thiruvaathira">Thiruvaathira</option>
+                                    <option value="Punartham">Punartham</option>
+                                    <option value="Pooyyam">Pooyyam</option>
+                                    <option value="Aayilyam">Aayilyam</option>
+                                    <option value="Makham">Makham</option>
+                                    <option value="Pooram">Pooram</option>
+                                    <option value="Uthram">Uthram</option>
+                                    <option value="Atham">Atham</option>
+                                    <option value="Chithira">Chithira</option>
+                                    <option value="Chothi">Chothi</option>
+                                    <option value="Visaakam">Visaakam</option>
+                                    <option value="Anizham">Anizham</option>
+                                    <option value="Thrikketta">Thrikketta</option>
+                                    <option value="Moolam">Moolam</option>
+                                    <option value="Pooraadam">Pooraadam</option>
+                                    <option value="Uthraadam">Uthraadam</option>
+                                    <option value="Thiruvonam">Thiruvonam</option>
+                                    <option value="Avittam">Avittam</option>
+                                    <option value="Chathayam">Chathayam</option>
+                                    <option value="Poorattadhi">Poorattadhi</option>
+                                    <option value="Uthrattathi">Uthrattathi</option>
+                                    <option value="Revathi">Revathi</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="stress">Current Stress Level</label>
+                                <select id="stress" name="stress" required>
+                                    <option value="" disabled selected>What's stressing you?</option>
+                                    <option value="exam">Exam Pressure</option>
+                                    <option value="relationship">Relationship Drama</option>
+                                    <option value="parents">Parental Expectations</option>
+                                    <option value="career">Career Confusion</option>
+                                    <option value="procrastination">Too Much Procrastination</option>
+                                    <option value="nothing">Nothing Specific, Just Vibes</option>
+                                    <option value="existential">Existential Dread</option>
+                                    <option value="sleep">Sleep Deprivation</option>
+                                    <option value="financial">Money Matters</option>
+                                    <option value="peer">Peer Pressure</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="profile-section">
+                        <h3>Partner's Cosmic Profile</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="partner-name">Partner's Name</label>
+                                <input type="text" id="partner-name" placeholder="Enter their name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="partner-star">Partner's Nakshatram</label>
+                                <select name="partner-star" id="partner-star" required>
+                                    <option value="">Select their nakshatra</option>
+                                    <option value="Aswathi">Aswathi</option>
+                                    <option value="Bharani">Bharani</option>
+                                    <option value="Karthika">Karthika</option>
+                                    <option value="Rohini">Rohini</option>
+                                    <option value="Makeeryam">Makeeryam</option>
+                                    <option value="Thiruvaathira">Thiruvaathira</option>
+                                    <option value="Punartham">Punartham</option>
+                                    <option value="Pooyyam">Pooyyam</option>
+                                    <option value="Aayilyam">Aayilyam</option>
+                                    <option value="Makham">Makham</option>
+                                    <option value="Pooram">Pooram</option>
+                                    <option value="Uthram">Uthram</option>
+                                    <option value="Atham">Atham</option>
+                                    <option value="Chithira">Chithira</option>
+                                    <option value="Chothi">Chothi</option>
+                                    <option value="Visaakam">Visaakam</option>
+                                    <option value="Anizham">Anizham</option>
+                                    <option value="Thrikketta">Thrikketta</option>
+                                    <option value="Moolam">Moolam</option>
+                                    <option value="Pooraadam">Pooraadam</option>
+                                    <option value="Uthraadam">Uthraadam</option>
+                                    <option value="Thiruvonam">Thiruvonam</option>
+                                    <option value="Avittam">Avittam</option>
+                                    <option value="Chathayam">Chathayam</option>
+                                    <option value="Poorattadhi">Poorattadhi</option>
+                                    <option value="Uthrattathi">Uthrattathi</option>
+                                    <option value="Revathi">Revathi</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="relationship">Relationship Type</label>
+                                <select name="relationship" id="relationship" required>
+                                    <option value="" disabled selected>What even is this?</option>
+                                    <option value="Situationship">Situationship</option>
+                                    <option value="One sided">One sided</option>
+                                    <option value="Friends with benefits">Friends with benefits</option>
+                                    <option value="Marriage">Marriage</option>
+                                    <option value="Rebound">Rebound</option>
+                                    <option value="Long distance">Long distance</option>
+                                    <option value="Living together">Living together</option>
+                                    <option value="Open (polyamory)">Open (polyamory)</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button class="calculate-breakup">Calculate My Breakup Date</button>
+                </div>
+            </section>
+
+            <section class="rate-us-section" id="rateUs">
+                <h2>🌟 Rate Nakshatra Nirnayam™</h2>
+                <p>Your stars for our stars 🌠</p>
+                <div class="stars" id="starRating">
+                    <span class="star" data-value="1" role="button" tabindex="0">★</span>
+                    <span class="star" data-value="2" role="button" tabindex="0">★</span>
+                    <span class="star" data-value="3" role="button" tabindex="0">★</span>
+                    <span class="star" data-value="4" role="button" tabindex="0">★</span>
+                    <span class="star" data-value="5" role="button" tabindex="0">★</span>
+                </div>
+                <p id="rateMessage" class="rate-msg"></p>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-balloon-heart" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"/>
+            </svg>
+            <h2>Nakshatra Nirnayam™</h2>
+            <p>Because every heartbreak deserves a perfect cosmic timing.</p>
+            <p>*Results are for entertainment purpose only. Please don't actually break up based on planetary positions</p>
+            <p>** Astrology is not responsible for your bad relationship choices, YOU ARE!!!</p>
+            <p>Made with <span class="love"> love </span> and <span>cosmic frustration</span></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

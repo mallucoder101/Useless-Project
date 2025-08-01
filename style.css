@@ -1,0 +1,426 @@
+:root {
+    --primary-color: #f2c143;
+    --secondary-color: #ff416c;
+    --bg-gradient: linear-gradient(145deg, #1a0033, #32003b);
+    --text-light: #ffffff;
+    --text-muted: #cfcfcf;
+    --spacing-unit: 1rem;
+    --border-radius: 8px;
+    --transition: all 0.3s ease;
+}
+span{
+    color: #f2c143;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-light);
+    background: var(--bg-gradient);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.navbar-brand h1 {
+    color: var(--text-light);
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    transition: var(--transition);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+}
+
+.navbar-links a:hover {
+    color: var(--primary-color);
+    background-color: rgba(242, 193, 67, 0.1);
+}
+
+.hero {
+    text-align: center;
+    margin-top: 10vh;
+    padding: 0 1rem;
+    flex: 1;
+}
+
+.hero h1 {
+    color: var(--text-light);
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.tagline {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.calculate {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    padding: 1rem;
+    border-radius: 30px;
+    background: linear-gradient(90deg, var(--secondary-color), #ff4b2b);
+    border: none;
+    color: var(--text-light);
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-bottom: 3rem;
+}
+
+.calculate:hover {
+    border: 1.5px solid var(--text-light);
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 65, 108, 0.4);
+}
+
+.contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.contents p {
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+}
+
+.contents svg {
+    color: var(--primary-color);
+}
+
+.form-section {
+    padding: 2rem 1rem;
+    margin-top: 10rem;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.form-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-header p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 2rem;
+}
+
+.profile-section {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid var(--text-light);
+    border-radius: 15px;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.profile-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Style for select dropdown options */
+select option {
+    background: #1a0033 !important;
+    color: white !important;
+    padding: 10px;
+}
+
+/* Style for the dropdown when open */
+select:focus option:checked {
+    background: #f2c143 !important;
+    color: #1a0033 !important;
+}
+
+/* Style for hover state of options */
+select option:hover {
+    background: #f2c143 !important;
+    color: #1a0033 !important;
+}
+
+/* For Firefox */
+select {
+    color: white !important;
+}
+
+/* For Chrome/Safari */
+select option {
+    color: white !important;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid var(--text-light);
+    border-radius: var(--border-radius);
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.form-actions {
+    text-align: center;
+    margin-top: 5.5rem;
+}
+
+.calculate-breakup {
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem;
+    border-radius: 30px;
+    background: linear-gradient(90deg, var(--secondary-color), #ff4b2b);
+    border: none;
+    color: var(--text-light);
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.calculate-breakup:hover {
+    border: 1.5px solid var(--text-light);
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 65, 108, 0.4);
+}
+
+.breakup-result {
+    margin: 2rem auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+.result-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.result-header h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.result-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+}
+
+.result-icon {
+    font-size: 1.2rem;
+}
+
+.result-text {
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+.result-text strong {
+    color: var(--primary-color);
+}
+
+.share-button {
+    background: linear-gradient(90deg, var(--primary-color), #ff6b35);
+    border: none;
+    color: #1a0033;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 1rem;
+}
+
+.roast-card {
+    border: 2px solid var(--secondary-color);
+}
+
+.roast-card .result-header h3,
+.roast-card .result-text strong {
+    color: var(--secondary-color);
+}
+
+.roast-share {
+    background: linear-gradient(90deg, var(--secondary-color), #ff6b35);
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: auto;
+}
+
+.footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer p {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.love {
+    color: var(--secondary-color);
+}
+
+.rate-us-section {
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 500px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stars {
+    font-size: 2rem;
+    color: #d3d3d3;
+    cursor: pointer;
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.stars .star:hover,
+.stars .star.selected {
+    color: var(--primary-color);
+}
+
+.rate-msg {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    min-height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        padding: 2rem 4rem;
+    }
+    
+    .hero {
+        margin-top: 20vh;
+    }
+    
+    .hero h1 {
+        font-size: 4rem;
+    }
+    
+    .tagline {
+        font-size: 1.5rem;
+    }
+    
+    .form-container {
+        flex-direction: row;
+        gap: 2rem;
+    }
+    
+    .profile-section {
+        flex: 1;
+        min-width: 300px;
+    }
+    
+    .calculate-breakup {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero h1 {
+        font-size: 4.5rem;
+    }
+}
